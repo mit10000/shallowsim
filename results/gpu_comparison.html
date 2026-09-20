@@ -1,0 +1,72 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset="utf-8">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+        .gpu-header {
+            font-weight: bold;
+            background-color: #e9ecef;
+        }
+    </style>
+    </head>
+    <body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">GPU \ EP</th>
+                <th>1</th><th>2</th><th>4</th><th>8</th><th>16</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="gpu-header">B200</td>
+                <td>throughput<br>tokens/s</td>
+                <td>-</td><td>-</td><td>-</td><td>5393</td><td>7946</td>
+            </tr>
+            <tr>
+                <td>TPD每美元吞吐<br>M token/$</td>
+                <td>-</td><td>-</td><td>-</td><td>4.3</td><td>6.3</td>
+            </tr>
+            <tr>
+                <td rowspan="4" class="gpu-header">B200-HBF</td>
+                <td>throughput</td>
+                <td>2996</td><td>4387</td><td>6451</td><td>12033</td><td>9347</td>
+            </tr>
+            <tr>
+                <td>M token/$</td>
+                <td>4.0</td><td>5.9</td><td>8.6</td><td>16.1</td><td>12.5</td>
+            </tr>
+            <tr>
+                <td>throughput X倍数</td>
+                <td>-</td><td>-</td><td>-</td><td>2.2</td><td>1.2</td>
+            </tr>
+            <tr>
+                <td>TPD X</td>
+                <td>-</td><td>-</td><td>-</td><td>3.76</td><td>1.98</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </body>
+    </html>
+    
